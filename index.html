@@ -9,24 +9,26 @@
   <body>
     <header>
 
-      <h4>October 8</h4>
+      <h4 class="weather-date">October 8</h4>
 
       <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
+        <input type="search" placeholder="Enter a city.." required class="weather-search" />
+        <input type="submit" value="Search" class="weather-submit" />
       </form>
     </header>
 
     <main>
       <div class="weather-data">
-        <h1>Lagos</h1>
-          <div>Tuesday 14:49</div>
-          <div>scattered clouds</div>
+        <h1 class="weather-city">Lagos</h1>
+          <div class="weather-day">Tuesday 14:49</div>
+          <div class="weather-condition">scattered clouds</div>
   
         
-      <div>🌤️<div></div> 12°C</div> <div></div>
-      <div> Humidity: 66%</div>
-        <div> Wind: 3.13km/h</div>
+      <div class="weather-icon">🌤️</div> 
+      <span class="weather-temperature">12</span>
+       <span class="weather-unit">°C<span>
+      <div class="humidity"> Humidity: 66%</div>
+        <div class="wind-speed"> Wind: 3.13km/h</div>
         </div>
     </main>
       
