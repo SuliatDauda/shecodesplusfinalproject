@@ -87,13 +87,13 @@ main {
 .weather-temperature {
   font-size: 90px;
   position: relative;
-  left: 60px;
+  left: 40px;
   top: 10px;
 }
 
 .weather-unit {
   position: relative;
-  left: 56px;
+  left: 40px;
   bottom: 30px;
   font-size: 25px;
 }
