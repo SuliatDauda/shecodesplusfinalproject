@@ -8,11 +8,6 @@ form {
   text-align: center;
 }
 
-h1 {
-  font-size: 55px;
-  margin-left: 25px;
-}
-
 main {
   display: flex;
 }
@@ -61,6 +56,11 @@ main {
   background: rgb(112, 0, 84);
 }
 
+.weather-city {
+  font-size: 55px;
+  margin-left: 25px;
+}
+
 .weather-details {
   position: relative;
   bottom: 40px;
@@ -96,4 +96,10 @@ main {
   position: relative;
   bottom: 270px;
   left: 250%;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 220px;
 }
