@@ -41,6 +41,7 @@ main {
 .weather-date {
   text-align: right;
   margin-right: 30px;
+  font-size: 25px;
 }
 
 .weather-search {
@@ -50,11 +51,11 @@ main {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgb(185, 75, 158);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .weather-submit {
-  padding: 6px 13px;
+  padding: 10px 13px;
   background-color: rgba(187, 35, 149, 0.925);
   color: rgb(92, 2, 54);
   border-radius: 8px;
@@ -62,6 +63,7 @@ main {
   position: relative;
   top: 3px;
   width: 20%;
+  font-size: 15px;
 }
 
 .weather-submit:hover {
