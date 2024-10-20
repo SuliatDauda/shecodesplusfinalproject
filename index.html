@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
  </head>
   <body>
       <body>
@@ -17,15 +16,15 @@
 
       <h3 class="weather-date">October 8</h3>
 
-      <form>
-        <input type="search" placeholder="Enter a city.." required class="weather-search" />
+      <form id="search-form">
+        <input type="search" placeholder="Enter a city.." required class="weather-search" id="search-input" />
         <input type="submit" value="Search" class="weather-submit" />
       </form>
     </header>
 
     <main>
       <div class="weather-data">
-        <h1 class="weather-city">Lagos</h1>
+        <h1 class="weather-city" id="weather-city">Lagos</h1>
 
         <div class="weather-details">
           <div class="weather-day">Tuesday 14:49</div>
