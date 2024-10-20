@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
  </head>
   <body>
+      <body>
     <div class="weather-app">
     <header>
 
@@ -23,26 +25,23 @@
 
     <main>
       <div class="weather-data">
-        <h1 class="weather-city" id="weather-city">Lagos</h1>
+        <h1 class="weather-city">Lagos</h1>
 
         <div class="weather-details">
           <div class="weather-day">Tuesday 14:49</div>
           <div class="weather-condition">scattered clouds</div>
         </div>
 
-      <div class="weather-icon">🌤️</div> 
-      <div class="weather">
-      <span class="weather-temperature" id="temperature">12</span>
+            <span class="weather-temperature">12</span>
        <span class="weather-unit">°C<span>
-        </div>
-
-        <div class="weather-line">
+      <div class="weather-icon">🌤️</div> 
+      
+      <div class="weather-deet">
       <div class="humidity"> Humidity: 66%</div>
         <div class="wind-speed"> Wind: 3.13km/h</div>
         </div>
-
         </div>
-    </main>
+    </main> 
       
       <footer>
         <p>
@@ -65,6 +64,7 @@
             >hosted on Netlify</a
           >
           <script src="src/week8.js"></script>
+          </div>
+        </footer>
   </body>
-  </div>
 </html>
