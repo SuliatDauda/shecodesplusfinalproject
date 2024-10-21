@@ -48,7 +48,6 @@ a {
 
 .weather-date {
   text-align: right;
-  margin-right: 30px;
   font-size: 25px;
 }
 
@@ -85,6 +84,7 @@ a {
   bottom: 27px;
   left: 25px;
   opacity: 0.9;
+  font-size: 18px;
 }
 
 .weather-icon {
@@ -112,7 +112,7 @@ a {
   position: relative;
   left: 240%;
   bottom: 220px;
-  font-size: 16px;
+  font-size: 20px;
   opacity: 0.9;
 }
 

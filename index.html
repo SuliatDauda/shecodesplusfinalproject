@@ -15,7 +15,7 @@
     <div class="weather-app">
     <header>
 
-      <h3 class="weather-date">October 8</h3>
+      <h3 class="weather-date" id="date"></h3>
 
       <form id="search-form">
         <input type="search" placeholder="Enter a city.." required class="weather-search" id="search-input" />
@@ -28,7 +28,7 @@
         <h1 class="weather-city" id="weather-city"></h1>
 
         <div class="weather-details">
-          <div class="weather-day">Tuesday <strong>14:49</strong></div>
+          <div class="weather-day" id="time"> <strong></strong></div>
           <div class="weather-condition" id="description"></div>
         </div>
 
@@ -38,7 +38,7 @@
       
       <div class="weather-deet">
       <div class="humidity"> Humidity: <strong id="humidity"></strong></div>
-        <div class="wind-speed"> Wind: <strong> 3.13km/h</strong></div>
+        <div class="wind-speed"> Wind: <strong id="wind-speed"> 3.13km/h</strong></div>
         </div>
         </div>
     </main> 
