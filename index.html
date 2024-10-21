@@ -14,9 +14,9 @@
       <body>
     <div class="weather-app">
     <header>
-
+       
       <h3 class="weather-date" id="date"></h3>
-
+    
       <form id="search-form">
         <input type="search" placeholder="Enter a city.." required class="weather-search" id="search-input" />
         <input type="submit" value="Search" class="weather-submit" />
@@ -24,22 +24,72 @@
     </header>
 
     <main>
-      <div class="weather-data">
+        <div class="weather-data">
         <h1 class="weather-city" id="weather-city"></h1>
+        <p class="weather-details">
+         <span id="time"></span>, <span id="description"></span>
+         <br>
+          Humidity: <strong id="humidity"></strong>, Wind: <strong id="wind-speed"></strong>
+        </p>
+      </div>
+      <div class="weather-temperature-container">
+        <div id="icon"></div>
+      <div class="weather-temperature" id="temperature"></div>
+    <div class="weather-unit">°C</div>
+    </div>
+          
 
-        <div class="weather-details">
-          <div class="weather-day" id="time"> <strong></strong></div>
-          <div class="weather-condition" id="description"></div>
-        </div>
-
-            <span class="weather-temperature" id="temperature"></span>
-       <span class="weather-unit">°C<span>
-      <div class="weather-icon" id="icon"></div> 
-      
-      <div class="weather-deet">
-      <div class="humidity"> Humidity: <strong id="humidity"></strong></div>
-        <div class="wind-speed"> Wind: <strong id="wind-speed"> 3.13km/h</strong></div>
-        </div>
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thu</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
         </div>
     </main> 
       
