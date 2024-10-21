@@ -8,9 +8,11 @@ function updateWeather(response) {
   let timebox = document.querySelector("#time");
   let dateBox = document.querySelector("#date");
   let date = new Date(response.data.time * 1000);
+  let iconBox = document.querySelector("#icon");
 
   console.log(response.data);
 
+  iconBox.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
   dateBox.innerHTML = formatMonth(date);
   timebox.innerHTML = formatDate(date);
   speedBox.innerHTML = `${response.data.wind.speed}km/h`;
