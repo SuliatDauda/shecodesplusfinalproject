@@ -1,10 +1,12 @@
 function updateWeather(response) {
+  let cityBox = document.querySelector("#weather-city");
+  let temperature = response.data.temperature.current;
   let temperatureBox = document.querySelector("#temperature");
   let descriptionBox = document.querySelector("#description");
-  let cityBox = document.querySelector("#weather-city");
+  let humidityBox = document.querySelector("#humidity");
 
-  let temperature = response.data.temperature.current;
   cityBox.innerHTML = response.data.city;
+  humidityBox.innerHTML = `${response.data.temperature.humidity}%`;
   descriptionBox.innerHTML = response.data.condition.description;
   temperatureBox.innerHTML = Math.round(temperature);
 }
