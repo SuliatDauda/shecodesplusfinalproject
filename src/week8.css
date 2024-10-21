@@ -26,6 +26,14 @@ main {
   display: flex;
 }
 
+strong {
+  color: #801a49;
+}
+
+a {
+  color: #13275c;
+}
+
 .weather-app {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/147/211/original/pexels-ithalu-907485.jpg?1728732848");
   background-repeat: no-repeat;
@@ -50,14 +58,14 @@ main {
   width: 70%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgb(185, 75, 158);
+  border-bottom: 1px solid rgb(209, 104, 183);
   font-size: 20px;
 }
 
 .weather-submit {
   padding: 10px 13px;
-  background-color: rgba(187, 35, 149, 0.925);
-  color: rgb(92, 2, 54);
+  background-color: rgba(207, 47, 135, 0.925);
+  color: rgb(226, 160, 196);
   border-radius: 8px;
   border: 1px solid rgba(150, 136, 230, 0.199);
   position: relative;
@@ -69,12 +77,14 @@ main {
 .weather-submit:hover {
   color: rgba(248, 181, 231, 0.925);
   background: rgb(112, 0, 84);
+  cursor: pointer;
 }
 
 .weather-details {
   position: relative;
   bottom: 27px;
   left: 25px;
+  opacity: 0.9;
 }
 
 .weather-icon {
@@ -103,6 +113,7 @@ main {
   left: 240%;
   bottom: 220px;
   font-size: 16px;
+  opacity: 0.9;
 }
 
 footer {
