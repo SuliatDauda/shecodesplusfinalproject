@@ -21,6 +21,8 @@ function updateWeather(response) {
   temperatureBox.innerHTML = Math.round(temperature);
 
   cityBox.innerHTML = response.data.city;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -62,6 +64,7 @@ function formatMonth(date) {
   let month = months[date.getMonth()];
   return `${dates} ${month} ${year}`;
 }
+
 function searchCity(city) {
   let apiKey = "905390deebf4616a1a1o9903d8ct5d65";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -75,7 +78,16 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayforecast() {
+function getForecast(city) {
+  let apiKey = "905390deebf4616a1a1o9903d8ct5d65";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(displayForecast);
+
   let forecastBox = document.querySelector("#forecast");
 
   let days = ["Tue", "wed", "Thu", "Fri", "Sat"];
@@ -106,5 +118,3 @@ let searchFormBox = document.querySelector("#search-form");
 searchFormBox.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Lagos");
-
-displayforecast();

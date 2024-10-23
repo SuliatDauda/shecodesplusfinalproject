@@ -6,10 +6,6 @@ body {
   color: #330249;
 }
 
-form {
-  text-align: center;
-}
-
 h1 {
   font-size: 55px;
   position: relative;
@@ -20,6 +16,9 @@ h1 {
   font-size: 50px;
 }
 
+form {
+  text-align: center;
+}
 strong {
   color: #801a49;
 }
@@ -37,9 +36,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 600px;
-  margin: 50px auto;
+  margin: 45px auto;
   box-shadow: 0 30px 50px rgba(240, 249, 249, 0.896);
-  padding: 40px;
+  padding: 30px;
   border-radius: 16px;
 }
 
@@ -64,8 +63,7 @@ main {
 }
 .weather-search {
   padding: 15px 20px;
-  margin-right: 30px;
-  width: 70%;
+  width: 75%;
   background: transparent;
   border: 1px solid rgb(226, 160, 196);
   font-size: 16px;
@@ -77,8 +75,10 @@ main {
   background-color: rgba(207, 47, 135, 0.925);
   color: rgb(226, 160, 196);
   border-radius: 8px;
-  border: 1px solid rgba(150, 136, 230, 0.199);
+  border: none;
   font-size: 16px;
+  margin-left: 5px;
+  width: 20%;
 }
 
 .weather-submit:hover {
@@ -89,8 +89,8 @@ main {
 
 .weather-details {
   position: relative;
-  top: 50px;
-  margin-left: 30px;
+  top: 60px;
+  margin-right: 50px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
