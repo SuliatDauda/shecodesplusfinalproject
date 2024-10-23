@@ -75,15 +75,17 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayforecast {
+function displayforecast() {
+  let forecastBox = document.querySelector("#forecast");
 
-let forecastBox = document.querySelector("#forecast");
+  let days = ["Tue", "wed", "Thu", "Fri", "Sat"];
 
-let days = ["Tue", "wed", "Thu", "Fri", "Sat"]
+  let forecastHtml = "";
 
-days.forEach(function(day) {
-
-  forecastBox.innerHTML = `
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
   <div class="weather-forecast-day">
             <div class="weather-forecast-date">Tue</div>
             <div class="weather-forecast-icon">🌤️</div>
@@ -95,7 +97,9 @@ days.forEach(function(day) {
             </div>
            </div>
   `;
-})
+  });
+
+  forecastBox.innerHTML = forecastHtml;
 }
 
 let searchFormBox = document.querySelector("#search-form");
@@ -104,4 +108,3 @@ searchFormBox.addEventListener("submit", handleSearchSubmit);
 searchCity("Lagos");
 
 displayforecast();
-
