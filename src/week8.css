@@ -7,7 +7,6 @@ body {
 }
 
 h1 {
-  font-size: 55px;
   position: relative;
   bottom: 24px;
   left: 30px;
@@ -104,6 +103,8 @@ main {
 .weather-icon {
   width: 88px;
   height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-temperature {
@@ -113,7 +114,7 @@ main {
 }
 
 .weather-unit {
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: 28px;
 }
 
@@ -127,11 +128,12 @@ main {
   border: 1px solid rgb(226, 160, 196);
   border-radius: 8px;
   padding: 10px;
+  width: 88px;
 }
 
 .weather-forecast-date {
   text-align: center;
-  color: rgba(26, 11, 90, 0.4);
+  color: rgba(4, 6, 104, 0.671);
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -153,7 +155,6 @@ main {
 }
 
 footer {
-  padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
